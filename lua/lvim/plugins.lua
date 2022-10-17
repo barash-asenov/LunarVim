@@ -27,7 +27,6 @@ local core_plugins = {
     end,
     disable = lvim.colorscheme ~= "onedarker",
   },
-  { "EdenEast/nightfox.nvim" }, -- a nice color scheme
   {
     "rcarriga/nvim-notify",
     config = function()
