@@ -75,7 +75,7 @@ M.add_exec = function(opts)
     return
   end
 
-  vim.keymap.set({ "n", "\\" }, opts.keymap, function()
+  vim.keymap.set({ "n", "t" }, opts.keymap, function()
     M._exec_toggle { cmd = opts.cmd, count = opts.count, direction = opts.direction }
   end, { desc = opts.label, noremap = true, silent = true })
 end
