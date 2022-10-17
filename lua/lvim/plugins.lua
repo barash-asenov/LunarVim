@@ -66,10 +66,10 @@ local core_plugins = {
       "L3MON4D3/LuaSnip",
     },
   },
-  {
-    "rafamadriz/friendly-snippets",
-    disable = not lvim.builtin.luasnip.sources.friendly_snippets,
-  },
+  -- {
+  --   "rafamadriz/friendly-snippets",
+  --   disable = not lvim.builtin.luasnip.sources.friendly_snippets,
+  -- },
   {
     "L3MON4D3/LuaSnip",
     config = function()
@@ -95,9 +95,9 @@ local core_plugins = {
   {
     "saadparwaiz1/cmp_luasnip",
   },
-  {
-    "hrsh7th/cmp-buffer",
-  },
+  -- {
+  --   "hrsh7th/cmp-buffer",
+  -- },
   {
     "hrsh7th/cmp-path",
   },

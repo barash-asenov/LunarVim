@@ -7,7 +7,7 @@ M.config = function()
     -- size can be a number or function which is passed the current terminal
     size = 20,
     -- open_mapping = [[<c-\>]],
-    open_mapping = [[<c-t>]],
+    open_mapping = [[<c-\>]],
     hide_numbers = true, -- hide the number column in toggleterm buffers
     shade_filetypes = {},
     shade_terminals = true,
@@ -75,7 +75,7 @@ M.add_exec = function(opts)
     return
   end
 
-  vim.keymap.set({ "n", "t" }, opts.keymap, function()
+  vim.keymap.set({ "n", "\\" }, opts.keymap, function()
     M._exec_toggle { cmd = opts.cmd, count = opts.count, direction = opts.direction }
   end, { desc = opts.label, noremap = true, silent = true })
 end
