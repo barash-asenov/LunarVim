@@ -17,7 +17,6 @@ local core_plugins = {
   {
     "folke/tokyonight.nvim",
   },
-  { "EdenEast/nightfox.nvim" }, -- a nice color scheme
   { "Tastyep/structlog.nvim" },
 
   { "nvim-lua/popup.nvim" },
